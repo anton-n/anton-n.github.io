@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+
+	<title>Resume</title>
+
+	<meta name="description" content="My resume">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name=viewport content="width=device-width, initial-scale=1">
+
+	<meta name="theme-color" content="#66749e">
+	<meta name="msapplication-navbutton-color" content="#66749e">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#66749e">
+
+	<meta property="og:image" content="path/to/image.jpg">
+
+	<link rel="shortcut icon" href="img/favicon/favicon.ico?v=2" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png">
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+<body>
+
+	<ul class="fullpage-nav" id="fullpage-menu">
+		<li class="fullpage-nav__item" data-menuanchor="resumeFirstPage" class="active"><a class="fullpage-nav__link" href="#resumeFirstPage">First section</a></li>
+		<li class="fullpage-nav__item" data-menuanchor="resumeSecondPage"><a class="fullpage-nav__link" href="#resumeSecondPage">Second section</a></li>
+		<li class="fullpage-nav__item" data-menuanchor="resumeThirdPage"><a class="fullpage-nav__link" href="#resumeThirdPage">Third section</a></li>
+	</ul>
+
+	<div id="fullpage">
+		<div class="section fullpage-section" data-anchor="resumeFirstPage">
+			<div class="container">
+				<div class="my-info">
+					<img class="my-info__photo wow fadeInDown" src="img/my-photo.png" alt="photo">
+					<h1 class="my-info__title wow fadeInUp">Антон Никифоров</h1>
+					<span class="my-info__subtitle wow fadeInUp" data-wow-delay=".7s">Верстальщик / Начинающий Front-End разработчик</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="section section_green fullpage-section" data-anchor="resumeSecondPage">
+			<div class="container">
+				<div class="about">
+					<h2 class="about__title">Обо мне</h2>
+					<p class="about__text">Здравствуйте, я начинающий верстальщик. И у меня есть желание учиться и развиваться в этом направлении. Верстаю валидно, адаптивно, по возможности применяю новые технологии в верстке. В своей	работе применяю систему сборки gulp, в основном использую препроцессор sass, стараюсь придерживаться методологии БЭМ в именовании классов при разметке страницы, знаю базовые команды для работы с git. В настоящее время изучаю Javascript и его библиотеку jQuery. На данный момент использую jquery для подключения, настройки различного рода плагинов и небольших доработок уже готовых скриптов. Из сcs-фреймворков знаком с bootstrap. Работаю с макетами при помощи Adobe Photoshop. Хочу устроиться в компанию, в которой я бы смог получить полезные практические знания, навыки и развиваться в дальнейшем в этой сфере.</p>
+					<div class="general">
+						<h3 class="general__title">Общая информация:</h3>		
+						<ul class="general__list">
+							<li class="general__item">День рождения: 02.07.1993</li>
+							<li class="general__item">Санкт-Петербург, г. Пушкин</li>
+							<li class="general__item">Образование: Высшее/ ЛГУ им. А.С.Пушкина/ Прикладная информатика/ 2016 г.</li>
+							<li class="general__item">Git: <a class="general__link" href="//github.com/anton-n" target="_blank">github.com/anton-n</a></li>
+							<li class="general__item"><a class="general__link" href="mailto:nikiforovanton1993@gmail.com">E-mail: nikiforovanton1993@gmail.com</a></li>
+							<li class="general__item"><a class="general__link" href="tel:+79523864977">Mobile: +79523864977</a></li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="section section_red fullpage-section" data-anchor="resumeThirdPage">
+			<div class="container">
+				<div class="skill">
+					<h2 class="skill__title">#Skills</h2>
+					<ul class="skills">
+						<li class="skills__item">HTML/CSS</li>
+						<li class="skills__item">jQuery</li>
+						<li class="skills__item">SASS/LESS</li>
+						<li class="skills__item">Gulp</li>
+						<li class="skills__item">Git</li>
+						<li class="skills__item">BEM</li>
+						<li class="skills__item">Bootstrap</li>
+						<li class="skills__item">FlexBox</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div><!-- /#js-fullpage -->
+
+	<script src="js/main.min.js"></script>
+
+</body>
+</html>
