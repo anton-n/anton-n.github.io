@@ -5,7 +5,7 @@
 
 	<title>Resume</title>
 
-	<meta name="description" content="My resume">
+	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name=viewport content="width=device-width, initial-scale=1">
@@ -14,7 +14,7 @@
 	<meta name="msapplication-navbutton-color" content="#66749e">
 	<meta name="apple-mobile-web-app-status-bar-style" content="#66749e">
 
-	<meta property="og:image" content="path/to/image.jpg">
+	<meta property="og:image" content="img/og/og-logo.png">
 
 	<link rel="shortcut icon" href="img/favicon/favicon.ico?v=2" type="image/x-icon">
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
@@ -22,69 +22,93 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 	<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-touch-icon-144x144.png">
 
-	<link rel="stylesheet" href="css/main.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,700|Roboto:400,400i,700" rel="stylesheet">
+
+	<link rel="stylesheet" media="all" href="css/main.css">
 
 </head>
 <body>
-
-	<ul class="fullpage-nav" id="fullpage-menu">
-		<li class="fullpage-nav__item" data-menuanchor="resumeFirstPage" class="active"><a class="fullpage-nav__link" href="#resumeFirstPage">First section</a></li>
-		<li class="fullpage-nav__item" data-menuanchor="resumeSecondPage"><a class="fullpage-nav__link" href="#resumeSecondPage">Second section</a></li>
-		<li class="fullpage-nav__item" data-menuanchor="resumeThirdPage"><a class="fullpage-nav__link" href="#resumeThirdPage">Third section</a></li>
-	</ul>
-
-	<div id="fullpage">
-		<div class="section fullpage-section" data-anchor="resumeFirstPage">
+	<div class="wrapper">
+		<header class="main-header">
 			<div class="container">
-				<div class="my-info">
-					<img class="my-info__photo wow fadeInDown" src="img/my-photo.jpg" alt="photo">
-					<h1 class="my-info__title wow fadeInUp">Антон Никифоров</h1>
-					<span class="my-info__subtitle wow fadeInUp" data-wow-delay=".7s">Верстальщик / Начинающий Front-End разработчик</span>
+				<div class="welcome">
+					<h1 class="welcome__text">Резюме</h1>
 				</div>
 			</div>
-		</div>
-
-		<div class="section section_green fullpage-section" data-anchor="resumeSecondPage">
-			<div class="container">
-				<div class="about">
-					<h2 class="about__title">О себе</h2>
-					<p class="about__text">Добрый день! Ищу работу верстальщика, и у меня есть желание учиться и развиваться в этом направлении. Верстаю валидно, адаптивно, по возможности применяю новые технологии в верстке. В своей	работе применяю систему сборки gulp, в основном использую препроцессор sass, стараюсь придерживаться методологии БЭМ в именовании классов при разметке страницы, знаю базовые команды для работы с git. В настоящее время изучаю Javascript и его библиотеку jQuery. На данный момент использую jquery для подключения, настройки различного рода плагинов и небольших доработок уже готовых скриптов. Из сcs-фреймворков знаком с bootstrap. Работаю с макетами при помощи Adobe Photoshop. Хочу устроиться в компанию, в которой я бы смог получить полезные практические знания, навыки и развиваться в дальнейшем в этой сфере.</p>
-					<div class="general">
-						<h3 class="general__title">Общая информация:</h3>		
-						<ul class="general__list">
-							<li class="general__item">День рождения: 02.07.1993</li>
-							<li class="general__item">Санкт-Петербург, г. Пушкин</li>
-							<li class="general__item">Образование: Высшее/ ЛГУ им. А.С.Пушкина/ Прикладная информатика/ 2016 г.</li>
-							<li class="general__item">Git: <a class="general__link" href="//github.com/anton-n" target="_blank">github.com/anton-n</a></li>
-							<li class="general__item"><a class="general__link" href="mailto:nikiforovanton1993@gmail.com">E-mail: nikiforovanton1993@gmail.com</a></li>
-							<li class="general__item"><a class="general__link" href="tel:+79523864977">Mobile: +79523864977</a></li>
-						</ul>
-					</div>
-
-				</div>
-			</div>
-		</div>
-
-		<div class="section section_red fullpage-section" data-anchor="resumeThirdPage">
-			<div class="container">
-				<div class="skill">
-					<h2 class="skill__title">#Skills</h2>
-					<ul class="skills">
-						<li class="skills__item">HTML/CSS</li>
-						<li class="skills__item">jQuery</li>
-						<li class="skills__item">SASS/LESS</li>
-						<li class="skills__item">Gulp</li>
-						<li class="skills__item">Git</li>
-						<li class="skills__item">BEM</li>
-						<li class="skills__item">Bootstrap</li>
-						<li class="skills__item">FlexBox</li>
+		</header>
+		<div class="container">
+			<section class="personal">
+				<div class="personal-info">
+					<ul class="personal-info__list">
+						<li class="personal-info__item personal-info__item_fio"><span>Никифоров Антон Игоревич</span></li>
+						<li class="personal-info__item"><span>Дата рождения:</span> 2 июля 1993 г.</li>
+						<li class="personal-info__item"><span>Город:</span> Санкт-Петербург, г.Пушкин</li>
+						<li class="personal-info__item"><span>Образование:</span> Ленинградский государственный университет им. А.С. Пушкина, прикладная информатика, 2016</li>
+						<li class="personal-info__item"><span>E-mail:</span> <a href="mailto:nikiforovanton1993@gmail.com">nikiforovanton1993@gmail.com</a></li>
+						<li class="personal-info__item"><span>GitHub:</span> <a href="//github.com/anton-n" target="_blank">github.com/anton-n</a></li>
 					</ul>
+					<img src="img/my-photo.jpg" alt="photo" class="personal-info__photo">
 				</div>
-			</div>
+			</section>
+			<section class="skill">
+				<h2 class="skill__title">#Skills</h2>
+				<div class="skills">
+					<div class="skills__item">HTML/CSS</div>
+					<div class="skills__item">SASS</div>
+					<div class="skills__item">jQuery</div>
+					<div class="skills__item">Bootstrap</div>
+					<div class="skills__item">Gulp</div>
+					<div class="skills__item">Git</div>
+					<div class="skills__item">FlexBox</div>
+					<div class="skills__item">BEM</div>
+				</div>
+			</section>
+			<section class="works">
+				<h2 class="works__title">Примеры работ</h2>
+				<div class="slider-container">
+					<div class="js-slider slider">
+						<div class="slider__item">
+							<a href="https://anton-n.github.io/demos/golden/" target="_blank">
+								<img src="img/golden.jpg" alt="" class="slider__img">
+							</a>
+						</div>
+						<div class="slider__item">
+							<a href="https://anton-n.github.io/demos/fudi/" target="_blank">
+								<img src="img/fudi.jpg" alt="" class="slider__img">
+							</a>
+						</div>
+						<div class="slider__item">
+							<a href="https://anton-n.github.io/demos/agency/" target="_blank">
+								<img src="img/agency.jpg" alt="" class="slider__img">
+							</a>
+						</div>
+					</div>
+					<div class="slider__nav">
+						<button class="slider__btn js-slider__prev"><</button>
+						<button class="slider__btn js-slider__next">></button>
+						<button class="slider__btn slider__btn_toggle js-slider__toggle-btn">Play</button>
+					</div>
+				</div>
+			</section>
+			<section class="about">
+				<h2 class="about__title">О себе</h2>
+				<p class="about__text">
+					<img src="img/red_eyes.gif" alt="gif" class="about__gif">
+					В свободное время занимаюсь версткой сайтов, изучаю javascript и английский язык. Заинтересован в трудоустройстве на должность верстальщика и профессиональном развитии до frontend-разработчика.
+				</p>
+				
+			</section>
 		</div>
-	</div><!-- /#js-fullpage -->
+	</div>
+	<footer class="main-footer">
+		<p>&copy; 2018</p>
+	</footer>
 
-	<script src="js/main.min.js"></script>
+	<a href="#" class="up js-jump-top">Up</a>
+
+
+
+<script src="js/main.min.js"></script>
 
 </body>
 </html>
