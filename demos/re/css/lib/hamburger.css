@@ -1,0 +1,13 @@
+.hamburger .line {
+    width: 40px;
+    height: 5px;
+    background-color: #fff;
+    display: block;
+    margin: 8px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger:hover {
+    cursor: pointer;
+}
